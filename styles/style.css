@@ -88,6 +88,7 @@ section {
     text-align: center;
 }
 
+/*Aba de cursos*/
 #cursos li {
   margin-bottom: 8px; 
 }
@@ -102,6 +103,23 @@ section {
 
 #cursos .item {
     text-align: left;
+}
+/*Seção diplomas*/
+#diplomas h1 {
+    text-align: center;
+}
+
+#diplomas h2 {
+    text-align: left;
+}
+
+#diplomas .item {
+    text-align: center;
+}
+
+#diplomas iframe {
+    border-radius: 15px;
+    box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para tablets */
