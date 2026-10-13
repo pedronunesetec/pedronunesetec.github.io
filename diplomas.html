@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Diplomas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="diplomas.html">Diplomas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="diplomas" class="container">
+    <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
+        <h1>Diplomas e Certificados</h1>
+
+        <h2>Curso Técnico EaDTEC AVA:</h2>
+        <!-- O contêiner agora controla a largura via classe CSS externa 'cert-container' -->
+        <div class="cert-container" oncontextmenu="return false;">
+            <!-- Camada Protetora Invisível (Classe móvel-friendly) -->
+            <div class="camada-protecao"></div>
+            
+            <!-- Visível apenas no Computador -->
+            <iframe id="diploma_1" class="pdf-view" src="./pdfs/diploma1.pdf#toolbar=0&navpanes=0">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+
+            <!-- Visível apenas no Celular (Converta seu PDF para JPG/PNG) -->
+            <img class="img-view" src="./images/diploma1.png" alt="Curso Técnico EaDTEC AVA" pointer-events="none">
+        </div>
+
+        <h2>Curso da FGV de Desenvolvimento Web:</h2>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_1" class="pdf-view" src="./pdfs/certificado1.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado1.png" alt="Curso FGV">
+        </div>
+
+        <h2>Curso A Jornada do Autodidata em Inglês 1.0:</h2>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_2" class="pdf-view" src="./pdfs/certificado2.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado2.png" alt="Jornada do Autodidata">
+        </div>
+
+        <h2>Curso Fundamentos da Inteligência Artificial da IBM:</h2>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_4" class="pdf-view" src="./pdfs/certificado4.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado4.png" alt="IBM AI">
+        </div>
+
+        <h2>Curso Introdução à Cibersegurança da CPS:</h2>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_5" class="pdf-view" src="./pdfs/certificado5.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado5.png" alt="CPS Cibersegurança">
+        </div>
+    </div>
+</section>
+    </main>
+    
+</body>
+</html>
