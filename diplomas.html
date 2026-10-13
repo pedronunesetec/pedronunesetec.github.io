@@ -20,51 +20,50 @@
     </header>
     <main>
         <section id="diplomas" class="container">
-    <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
+        <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
         <h1>Diplomas e Certificados</h1>
 
         <h2>Curso Técnico EaDTEC AVA:</h2>
-        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+        <!-- O contêiner agora controla a largura via classe CSS externa 'cert-container' -->
+        <div class="cert-container" oncontextmenu="return false;">
+            <!-- Camada Protetora Invisível (Classe móvel-friendly) -->
+            <div class="camada-protecao"></div>
             
-            <!-- CAMADA PROTETORA INVISÍVEL: cobre 96% da largura, deixando a barra de rolagem (à direita) exposta -->
-            <div style="position: absolute; top: 0; left: 0; width: 99%; height: 100%; z-index: 10; background: transparent;"></div>
-            
-            <!-- IFRAME DO PDF: O usuário consegue interagir com os 4% restantes da direita (onde fica o scroll) -->
-            <iframe id="diploma_1" src="./pdfs/diploma1.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+            <!-- Visível apenas no Computador -->
+            <iframe id="diploma_1" class="pdf-view" src="./pdfs/diploma1.pdf#toolbar=0&navpanes=0">
                 Seu navegador não suporta a visualização de PDFs. 
             </iframe>
+
+            <!-- Visível apenas no Celular (Converta seu PDF para JPG/PNG) -->
+            <img class="img-view" src="./images/diploma1.png" alt="Curso Técnico EaDTEC AVA" pointer-events="none">
         </div>
 
         <h2>Curso da FGV de Desenvolvimento Web:</h2>
-        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
-            <div style="position: absolute; top: 0; left: 0; width: 99%; height: 100%; z-index: 10; background: transparent;"></div>
-            <iframe id="certificado_1" src="./pdfs/certificado1.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
-                Seu navegador não suporta a visualização de PDFs. 
-            </iframe>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_1" class="pdf-view" src="./pdfs/certificado1.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado1.png" alt="Curso FGV">
         </div>
 
         <h2>Curso A Jornada do Autodidata em Inglês 1.0:</h2>
-        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
-            <div style="position: absolute; top: 0; left: 0; width: 99%; height: 100%; z-index: 10; background: transparent;"></div>
-            <iframe id="certificado_2" src="./pdfs/certificado2.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
-                Seu navegador não suporta a visualização de PDFs. 
-            </iframe>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_2" class="pdf-view" src="./pdfs/certificado2.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado2.png" alt="Jornada do Autodidata">
         </div>
 
         <h2>Curso Fundamentos da Inteligência Artificial da IBM:</h2>
-        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
-            <div style="position: absolute; top: 0; left: 0; width: 99%; height: 100%; z-index: 10; background: transparent;"></div>
-            <iframe id="certificado_4" src="./pdfs/certificado4.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
-                Seu navegador não suporta a visualização de PDFs. 
-            </iframe>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_4" class="pdf-view" src="./pdfs/certificado4.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado4.png" alt="IBM AI">
         </div>
 
         <h2>Curso Introdução à Cibersegurança da CPS:</h2>
-        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
-            <div style="position: absolute; top: 0; left: 0; width: 99%; height: 100%; z-index: 10; background: transparent;"></div>
-            <iframe id="certificado_5" src="./pdfs/certificado5.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
-                Seu navegador não suporta a visualização de PDFs. 
-            </iframe>
+        <div class="cert-container" oncontextmenu="return false;">
+            <div class="camada-protecao"></div>
+            <iframe id="certificado_5" class="pdf-view" src="./pdfs/certificado5.pdf#toolbar=0&navpanes=0"></iframe>
+            <img class="img-view" src="./images/certificado5.png" alt="CPS Cibersegurança">
         </div>
     </div>
 </section>
