@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Diplomas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="diplomas.html">Diplomas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="diplomas" class="container">
+    <div class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%;">
+        <h1>Diplomas e Certificados</h1>
+
+        <h2>Curso Técnico EaDTEC AVA:</h2>
+        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+            
+            <!-- CAMADA PROTETORA INVISÍVEL: cobre 96% da largura, deixando a barra de rolagem (à direita) exposta -->
+            <div style="position: absolute; top: 0; left: 0; width: 96%; height: 100%; z-index: 10; background: transparent;"></div>
+            
+            <!-- IFRAME DO PDF: O usuário consegue interagir com os 4% restantes da direita (onde fica o scroll) -->
+            <iframe id="diploma_1" src="./pdfs/diploma1.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+        </div>
+
+        <h2>Curso da FGV de Desenvolvimento Web:</h2>
+        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+            <div style="position: absolute; top: 0; left: 0; width: 96%; height: 100%; z-index: 10; background: transparent;"></div>
+            <iframe id="certificado_1" src="./pdfs/certificado1.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+        </div>
+
+        <h2>Curso A Jornada do Autodidata em Inglês 1.0:</h2>
+        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+            <div style="position: absolute; top: 0; left: 0; width: 96%; height: 100%; z-index: 10; background: transparent;"></div>
+            <iframe id="certificado_2" src="./pdfs/certificado2.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+        </div>
+
+        <h2>Curso Fundamentos da Inteligência Artificial da IBM:</h2>
+        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+            <div style="position: absolute; top: 0; left: 0; width: 96%; height: 100%; z-index: 10; background: transparent;"></div>
+            <iframe id="certificado_4" src="./pdfs/certificado4.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+        </div>
+
+        <h2>Curso Introdução à Cibersegurança da CPS:</h2>
+        <div oncontextmenu="return false;" style="position: relative; width: 50%; height: 600px; margin-bottom: 20px; background-color: #eee;">
+            <div style="position: absolute; top: 0; left: 0; width: 96%; height: 100%; z-index: 10; background: transparent;"></div>
+            <iframe id="certificado_5" src="./pdfs/certificado5.pdf#toolbar=0&navpanes=0" width="100%" height="100%" style="border: none;">
+                Seu navegador não suporta a visualização de PDFs. 
+            </iframe>
+        </div>
+    </div>
+</section>
+    </main>
+    
+</body>
+</html>
