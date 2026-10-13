@@ -103,3 +103,17 @@ section {
 #cursos .item {
     text-align: left;
 }
+
+/* Estilos para tablets */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 8px 0; /* diminui a altura para tablets */
+    }
+}
+
+/* Estilos para celulares */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 5px 0; /* diminui ainda mais a altura para celulares */
+    }
+}
