@@ -117,7 +117,7 @@ section {
     text-align: center;
 }
 
-#diplomas iframe {
+#diplomas .iframe {
     border-radius: 15px;
     box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.1);
 }
