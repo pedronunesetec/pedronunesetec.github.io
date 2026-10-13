@@ -111,10 +111,78 @@ section {
 
 #diplomas h2 {
     text-align: left;
+    width: 50%; /* Alinha a largura do título com a do contêiner no PC */
+    margin-bottom: 10px;
 }
 
 #diplomas .item {
     text-align: center;
+}
+
+/* --- CONFIGURAÇÃO DOS CERTIFICADOS (COMPUTADOR) --- */
+#diplomas .cert-container {
+    position: relative; 
+    width: 50%; /* Largura padrão no computador */
+    height: 600px; 
+    margin-bottom: 35px; 
+    background-color: #eee;
+}
+
+#diplomas .camada-protecao {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 99%; /* Deixa os 4% da direita livres para o scroll do PDF no PC */
+    height: 100%; 
+    z-index: 10; 
+    background: transparent;
+}
+
+#diplomas .pdf-view {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Esconde a versão em imagem no computador */
+#diplomas .img-view {
+    display: none;
+}
+
+/* --- CONFIGURAÇÃO RESPONSIVA (CELULAR - Telas até 768px) --- */
+@media (max-width: 768px) {
+    #diplomas h2 {
+        width: 90%; /* Ajusta o título para acompanhar a largura do celular */
+        font-size: 1.2rem;
+    }
+
+    #diplomas .cert-container {
+        width: 90%; /* Expande o contêiner para melhor leitura no celular */
+        height: auto; /* Permite que a altura se ajuste ao formato do certificado */
+        background-color: transparent;
+        margin-bottom: 25px;
+    }
+
+    /* Esconde o iframe (PDF) que não renderiza em navegadores móveis */
+    #diplomas .pdf-view {
+        display: none;
+    }
+
+    /* Exibe e ajusta a imagem do certificado perfeitamente na tela */
+    #diplomas .img-view {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para destaque */
+        user-select: none; /* Dificulta a seleção/cópia da imagem */
+        -webkit-user-drag: none; /* Impede o usuário de arrastar a imagem */
+    }
+
+    /* Destrava o toque na tela para o usuário conseguir rolar a página no celular */
+    #diplomas .camada-protecao {
+        pointer-events: none; 
+        width: 100%;
+    }
 }
 
 /* Estilos para tablets */
