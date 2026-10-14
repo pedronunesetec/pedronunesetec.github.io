@@ -131,7 +131,7 @@ section {
     position: absolute; 
     top: 0; 
     left: 0; 
-    width: 100%; /* Deixa os 4% da direita livres para o scroll do PDF no PC */ 
+    width: 99.7%; /* Deixa os 4% da direita livres para o scroll do PDF no PC */ 
     height: 100%; 
     z-index: 10; 
     background: transparent; 
